@@ -1,0 +1,14 @@
+.body{
+    background-color: rgb(139, 144, 148);
+}
+.container{
+text-align: center;
+border: 1px solid black;
+width: 300px;
+height: 500px;
+
+}
+section h1{
+margin-top: 5px;
+
+}
