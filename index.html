@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculater</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>BMI Calculater</hi>
+        </section>
+        <div>
+            <label>Hight</label>
+            <input type="text" id="hight" value="">
+        </div>
+        <div>
+            <label>Weight</label>
+            <input type="text" id="weight" value="">
+        </div>
+        <div>
+            <input type="button" id="submit" value="Calculate">
+            <input type="button" value="Reset">
+        </div>
+        <div id="calculate" style="display: none;">
+            <p>Your BMI is <h6 id="ans"></h6></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+       $( document ).ready();
+       $('#submit').click(function(){
+       var hight = $('#hight').val()/100;
+       var weight = $('#weight').val();
+       var calculate = weight/Math.pow(hight,2);
+       var BMI = Math.round(calculate);
+       alert(weight);
+        $('#ans').text(BMI);
+        $('#calculate').show();
+       });
+    </script>
+</body>
+</html>
