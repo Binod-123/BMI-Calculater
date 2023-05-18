@@ -1,5 +1,7 @@
 .body{
     background-color: rgb(139, 144, 148);
+    display: flex;
+    justify-content: center;
 }
 .container{
 text-align: center;
